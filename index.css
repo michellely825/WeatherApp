@@ -1,0 +1,23 @@
+
+body {
+  margin: 0;
+  font-family: "Outfit", 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: lightblue;
+  display: flex;
+}
+
+ p {
+  font-size: 1.6rem;
+ }
+
+ h1 {
+  font-size: 5rem;
+ }
+
+h5 {
+  font-size: 1rem;
+}

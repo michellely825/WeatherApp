@@ -1,0 +1,238 @@
+
+.WeatherApp {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 17px;
+    font-family: Light, sans-serif;
+}
+
+.app {
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.3);
+    width: 100vw;
+    height:100vh;
+}
+@media screen and (min-width: 700px) {
+    .location {
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+    .general {
+        margin: 3.5rem;
+        padding: 10px;
+    }
+    
+    .weatherCard {
+        display:grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .top {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .together {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+    }
+
+    .temp {
+        grid-column: 1 / span 2;
+        margin:0;
+        line-height: 0;
+    }
+    .description {
+        margin:0;
+        text-transform: capitalize;
+        margin:0;
+        font-size: 18px;
+        grid-column: 1 / span 2;
+    }
+    
+    .icon {
+        content: '/';
+        display: flex;
+        width: 125px;
+        height: 125px;
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.7));
+    }
+    
+    .details{
+        display: flex;
+        margin: 3rem;
+        gap:100px;
+        width: 30%;
+        border-radius: 12px;
+        padding: 30px;
+        background-color: rgba(255,255,255,0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .bottom {
+        display:grid;
+        max-width: 100%;
+    }
+
+    .forecastTemp {
+        line-height: 0;
+    }
+
+    .weeklydata {
+        border-radius: 12px;
+        padding-left: 0.7rem;
+        padding-right:0.7rem;
+        margin: 0 auto;
+        background-color:rgba(255,255,255,0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+        line-height: 0;
+    }
+    .weeklyIcon {
+        width: 5rem;
+    }
+    
+    .forecast {
+        display: flex; 
+        padding-top:0;
+        padding-left: 2rem;
+        padding-right:2rem;
+        margin-bottom:0;
+    }
+    .weeklyForecast {
+        margin-left: 4rem;
+        line-height: 0;
+    }
+}
+
+
+@media screen and (max-width: 699px) {
+    .location {
+        font-size: 21px;
+        /* margin-left: 35px; */
+    }
+
+
+    .general {
+        margin: 3rem;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: rgba(255,255,255,0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+    
+    .weatherCard {
+        display:flex; 
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        justify-content: space-evenly;
+        /* gap: 10px; */
+    }
+    
+    .together {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        
+    }
+    .temp {
+        grid-column: 1 / span 2;
+        margin:0;
+        line-height: 0;
+    }
+    .description {
+        margin:0;
+        text-transform: capitalize;
+        margin:0;
+        font-size: 18px;
+        grid-column: 1 / span 2;
+        
+    
+    }
+    
+    .icon {
+        content: '/';
+        display: flex;
+        width: 125px;
+        height: 125px;
+        filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.7));
+    }
+    
+    .details{
+        display: flex;
+        margin: 3rem;
+        justify-content: space-evenly;
+        text-align: center;
+        border-radius: 12px;
+        padding: 2px;
+        background-color: rgba(255,255,255,0.2);
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.inputdiv {
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    margin: auto;
+    color: white;
+    z-index: 10;
+}
+
+.Input {
+    width: 300px;
+    height: 20px;
+    display: block;
+    margin: 0 auto;
+
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: none;
+    outline:none;
+}
+
+.inputform {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+    color: white;
+    font-size: 15px;
+    justify-content: space-between;
+    padding: 3px;
+    border-radius: 25px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.4));
+}
+
+.btn {
+    border: none; 
+    color: gray;
+    background-color: transparent;
+    font-size: 18px;
+    padding: 10px;
+}
+
+
+
+
+
+
